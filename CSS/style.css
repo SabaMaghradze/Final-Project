@@ -1,5 +1,5 @@
 .container {
-    max-width: 1440px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
 }
@@ -88,7 +88,7 @@ a:hover {
 }
 
 .sect1Content {
-    width: 44%;
+    width: 34%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,7 +109,7 @@ a:hover {
     margin-bottom: 72px;
 }
 
-button {
+.shopNow {
     color: white;
     background-color: transparent;
     padding: 19px 117px;
@@ -128,7 +128,7 @@ button {
 }
 
 .sect2Content {
-    width: 65%;
+    width: 49%;
     display: flex;
     justify-content: space-between;
 }
@@ -168,7 +168,7 @@ button {
 }
 
 .grid {
-    width: 82%;
+    width: 61%;
     display: grid;
     gap: 60px;
     grid-template-columns: 1fr 1fr 1.5fr;
@@ -197,3 +197,239 @@ button {
     grid-area: rect93;
 }
 
+/* section4 */
+
+.section4 {
+    width: 100%;
+    padding: 160px 0;
+}
+
+.latestProducts {
+    font-weight: 700;
+    font-size: 40px;
+    color: #402101;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.productCards {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productCard {
+    position: relative;
+}
+
+.price {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    padding: 17px;
+    font-size: 16px;
+    color: #B53B1B;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.frame {
+    max-width: 44px;
+    max-height: 44px;
+}
+
+/* section5 */
+
+.section5 {
+    width: 100%;
+    background-image: url(../Images/Rectangle\ 98.png);
+    padding: 160px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sect5Content {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.newsLetter {
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.emailNSubscribe {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+
+.email {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 17px 205px 17px 17px;
+    background-color: transparent;
+}
+
+.email>input {
+    background-color: transparent;
+}
+
+.subscribe {
+    font-weight: 400;
+    font-size: 18px;
+    color: #402101;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    padding: 17px;
+    border: none;
+}
+
+/* section6 */
+
+.section6 {
+    width: 100%;
+    padding: 160px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sect6Content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.threeGroups {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.group {
+    width: 26.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+    background: rgba(213, 144, 110, 0.3);
+    border-radius: 8px;
+}
+
+.sect6Title {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+
+.groupTitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #B53B1B;
+}
+
+.groupText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #402101;
+}
+
+.question {
+    font-weight: 700;
+    font-size: 24px;
+    color: #402101;
+    margin-top: 112px;
+    margin-bottom: 20px;
+}
+
+.helpCenter {
+    font-weight: 400;
+    font-size: 24px;
+    padding: 14px 52px;
+    color: white;
+    background-color: #B53B1B;
+    border: none;
+    border-radius: 10px;
+}
+
+/* footer */
+
+footer {
+    background: #402101;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 32px 365px 57px 365px;
+}
+
+.firstColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hele {
+    font-size: 18px;
+    font: bold;
+}
+
+footer>div>h4 {
+    font-weight: 300;
+    font-size: 16px;
+    color: white
+}
+
+.icons {
+    display: flex;
+    gap: 23px;
+    margin-top: 27px;
+}
+
+.secondColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.secondColumn>div {
+    display: flex;
+    gap: 16px;
+}
+
+.secondColumn>div>p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.fa-phone {
+    color: white;
+}
+
+.fa-envelope {
+    color: white;
+}
+
+.fa-location-dot {
+    color: white;
+}
