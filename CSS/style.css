@@ -37,11 +37,13 @@ a {
 }
 
 a.active {
-    color: #D5906E;;
+    color: #D5906E;
+    ;
 }
 
 a:hover {
-    color: #D5906E;;
+    color: #D5906E;
+    ;
     transform: scale(1.5);
 }
 
@@ -56,7 +58,8 @@ a:hover {
 }
 
 .artistry {
-    color: #D5906E;;
+    color: #D5906E;
+    ;
 }
 
 .signInDiv {
@@ -75,7 +78,7 @@ a:hover {
 
 .section1 {
     width: 100%;
-    padding: 283px;
+    padding: 283px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,19 +88,19 @@ a:hover {
 }
 
 .sect1Content {
-    width: 73%;
+    width: 44%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h2 {
+.section1Title {
     font-weight: 700;
     font-size: 40px;
     color: white;
 }
 
-h3 {
+.section1Text {
     font-weight: 400;
     font-size: 16px;
     color: white;
@@ -113,3 +116,84 @@ button {
     border: 2px solid #D5906E;
     border-radius: 10px;
 }
+
+/* section2 */
+
+.section2 {
+    width: 100%;
+    padding: 160px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sect2Content {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sect2Content>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.sect2Text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #B53B1B;
+}
+
+/* section3 */
+
+.section3 {
+    width: 100%;
+    padding: 96px 0;
+    background-color: #402101;
+}
+
+.sect3Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.ourGallery {
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.grid {
+    width: 82%;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 322px 260px;
+    grid-template-areas: "rect85 rect85 rect93"
+        "rect91 rect92 rect90";
+}
+
+.rect85 {
+    grid-area: rect85;
+}
+
+.rect90 {
+    grid-area: rect90;
+}
+
+.rect91 {
+    grid-area: rect91;
+}
+
+.rect92 {
+    grid-area: rect92;
+}
+
+.rect93 {
+    grid-area: rect93;
+}
+
