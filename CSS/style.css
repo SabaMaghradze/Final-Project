@@ -30,7 +30,7 @@ ul {
     gap: 60px;
 }
 
-a {
+li>a {
     display: block;
     transition-property: all;
     transition-duration: 0.8s;
@@ -38,12 +38,10 @@ a {
 
 a.active {
     color: #D5906E;
-    ;
 }
 
-a:hover {
+li>a:hover {
     color: #D5906E;
-    ;
     transform: scale(1.5);
 }
 
@@ -587,7 +585,8 @@ footer>div>h4 {
 }
 
 .arrow,
-.number, .ellipsis {
+.number,
+.ellipsis {
     width: 56px;
     height: 56px;
     display: flex;
@@ -607,4 +606,93 @@ footer>div>h4 {
 .filled {
     background: #B53B1B;
     color: white;
+}
+
+/* contact page */
+
+.contactSect1 {
+    width: 100%;
+    background-image: url(../Images/Rectangle\ 108.png);
+    padding: 208px 0 112px 240px;
+}
+
+form {
+    width: 30%;
+    padding: 24px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(64, 33, 1, 0.73);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.formContent {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.nameAndEmail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameAndEmail>input {
+    width: 47.5%;
+    padding: 11px 0 12px 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.nameAndEmail>input::placeholder {
+    color: white;
+}
+
+.getInTouch {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+#message {
+    padding: 8px 0 71px 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+#message::placeholder {
+    color: white;
+}
+
+#submit {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 0 19px 0;
+    background: #D5906E;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
 }
