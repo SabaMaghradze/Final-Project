@@ -14,6 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -695,4 +696,68 @@ form {
     font-size: 16px;
     color: #FFFFFF;
     border: none;
+}
+
+/* section2 */
+
+.contactSect2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0;
+}
+
+.contactSect2Content {
+    width: 62%;
+    background: rgba(213, 144, 110, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #402101;
+}
+
+.contactInfoAndMap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contactInfo>div>p {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #623932;
+}
+
+.contactInfo>div>p>span>a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B53B1B;
+}
+
+iframe {
+    width: 815px;
+    height: 320px;
 }
