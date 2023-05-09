@@ -80,6 +80,24 @@ li>a:hover {
 .signIn {
     font-weight: 400;
     font-size: 16px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.signIn:hover {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.fa-cart-shopping {
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.fa-cart-shopping:hover {
+    color: #D5906E;
+    transform: scale(1.1);
 }
 
 /* section1 */
@@ -100,6 +118,26 @@ li>a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    transform: translateX(50%) translateY(-50%);
+    animation: appear 1s forwards cubic-bezier(.36, .45, .63, .56);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateX(0) translateY(-10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
 }
 
 .section1Title {
@@ -259,6 +297,12 @@ li>a:hover {
 .frame {
     max-width: 44px;
     max-height: 44px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.frame:hover {
+    transform: scale(1.3);
 }
 
 /* section5 */
@@ -275,6 +319,7 @@ li>a:hover {
     width: 26%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 56px;
 }
 
@@ -282,30 +327,29 @@ li>a:hover {
     font-weight: 700;
     font-size: 40px;
     color: #FFFFFF;
-    text-align: center;
 }
 
 .emailNSubscribe {
     display: flex;
     border-radius: 10px;
     overflow: hidden;
-    margin: 0 auto;
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
-.email {
+#email {
     font-weight: 400;
     font-size: 16px;
+    color: white;
+    padding: 17px 110px 17px 17px;
+    background-color: transparent;
+    border: none;
+}
+
+#email::placeholder {
     color: #FFFFFF;
-    padding: 17px 205px 17px 17px;
-    background-color: transparent;
 }
 
-.email>input {
-    background-color: transparent;
-}
-
-.subscribe {
+#subscribe {
     font-weight: 400;
     font-size: 18px;
     color: #402101;
@@ -313,6 +357,7 @@ li>a:hover {
     border-radius: 0px 10px 10px 0px;
     padding: 17px;
     border: none;
+    cursor: pointer;
 }
 
 /* section6 */
@@ -384,6 +429,13 @@ li>a:hover {
     background-color: #B53B1B;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.helpCenter:hover {
+    transform: scale(1.1);
+    color: silver;
 }
 
 /* footer */
@@ -459,23 +511,23 @@ footer>div>h4 {
 .fa-envelope,
 .fa-location-dot {
     color: #FFFFFF;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
 }
 
 
 .fa-envelope:hover {
     color: lightblue;
-    transform: scale(1.3);
+    transform: scale(1.5);
 }
 
 .fa-phone:hover {
     color: lightskyblue;
-    transform: scale(1.3);
+    transform: scale(1.5);
 }
 
 .fa-location-dot:hover {
     color: red;
-    transform: scale(1.3);
+    transform: scale(1.5);
 }
 
 /* Artworks page */
@@ -498,6 +550,9 @@ footer>div>h4 {
     flex-direction: column;
     align-items: center;
     gap: 72px;
+    opacity: 0;
+    transform: translateX(50%) translateY(-50%);
+    animation: appear 1s forwards cubic-bezier(.36, .45, .63, .56);
 }
 
 /* sect2 */
@@ -538,17 +593,21 @@ footer>div>h4 {
     display: flex;
     border-radius: 10px;
     overflow: hidden;
-    margin: 0 auto;
     border: 2px solid #402101;
 }
 
-.searchBar {
+.secondDivv>input {
     font-weight: 400;
-    font-size: 16px;
-    color: rgba(64, 33, 1, 0.52);
+    font-size: 25px;
     padding: 19px 271px 18px 16px;
     background-color: transparent;
+    border: none;
 }
+
+.secondDivv>input::placeholder {
+    color: rgba(64, 33, 1, 0.52);
+}
+
 
 .secondDivv>button {
     font-weight: 400;
@@ -558,6 +617,7 @@ footer>div>h4 {
     border-radius: 0px 10px 10px 0px;
     padding: 17px 89px;
     border: none;
+    cursor: pointer;
 }
 
 .secondRow {
@@ -597,9 +657,16 @@ footer>div>h4 {
     flex-wrap: wrap;
 }
 
-.artworkCard {
+.artworkCard>img {
     display: flex;
     flex-direction: column;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.artworkCard:hover>img {
+    transform: scale(1.2);
+    box-shadow: 15px 15px 15px darkgray;
 }
 
 .productName {
@@ -639,20 +706,24 @@ footer>div>h4 {
     justify-content: center;
     align-items: center;
     border: 2px solid #B53B1B;
-}
-
-.number {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     color: #402101;
+    transition: all 0.2s linear;
 }
 
-.filled {
-    background: #B53B1B;
+.arrow:hover,
+.number:hover,
+.ellipsis:hover {
+    background-color: #B53B1B;
+    border-color: white;
     color: white;
+    transform: scale(1.1);
 }
+
+
 
 /* contact page */
 
@@ -741,6 +812,12 @@ form {
     font-size: 16px;
     color: #FFFFFF;
     border: none;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+#submit:hover {
+    transform: scale(1.05);
 }
 
 /* section2 */
