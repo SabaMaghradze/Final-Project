@@ -24,6 +24,11 @@ header {
     backdrop-filter: blur(5px);
 }
 
+.fa-bars {
+    color: white;
+    display: none;
+}
+
 nav>ul {
     display: flex;
     gap: 60px;
@@ -33,9 +38,6 @@ nav>ul>li>a {
     font-weight: 400;
     font-size: 18px;
     color: white;
-}
-
-li>a {
     display: block;
     transition-property: all;
     transition-duration: 0.8s;
@@ -107,7 +109,6 @@ li>a:hover {
     padding: 283px 0 188px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-image: url(../Images/Rectangle\ 106.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,6 +145,7 @@ li>a:hover {
     font-weight: 700;
     font-size: 40px;
     color: white;
+    text-align: center;
 }
 
 .section1Text {
@@ -158,9 +160,11 @@ li>a:hover {
 
 
 .shopNow {
+    width: 42%;
     color: white;
     background-color: transparent;
-    padding: 19px 117px;
+    padding: 19px 0;
+    justify-content: center;
     border: 2px solid #D5906E;
     border-radius: 10px;
     cursor: pointer;
@@ -539,9 +543,9 @@ footer>div>h4 {
     padding: 240px 0 144px 0;
     background-image: url(../Images/depositphotos_116744566-stock-photo-abstract-brown-texture-background.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .sect1Content {
