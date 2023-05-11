@@ -15,11 +15,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     background: rgba(213, 144, 110, 0.52);
     backdrop-filter: blur(5px);
 }
@@ -112,6 +107,7 @@ li>a:hover {
     background-image: url(../Images/Rectangle\ 106.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .section1Content {
@@ -181,7 +177,6 @@ li>a:hover {
     width: 100%;
     padding: 160px 0;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -192,13 +187,19 @@ li>a:hover {
 }
 
 .section2Content>div {
+    width: 20.2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
 }
 
+.section2Content>div>img {
+    width: 100%;
+}
+
 .sect2Text {
+    text-align: center;
     font-weight: 400;
     font-size: 18px;
     color: #B53B1B;
@@ -260,6 +261,16 @@ li>a:hover {
 .section4 {
     width: 100%;
     padding: 160px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section4Content {
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
 }
 
 .latestProducts {
@@ -269,25 +280,34 @@ li>a:hover {
     text-align: center;
 }
 
-.products {
+.productsAndArrows {
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 24px;
-    margin-top: 40px;
+    justify-content: space-between;
 }
 
 .productCards {
-    width: 75%;
+    width: 91.38%;
     display: flex;
     justify-content: space-between;
 }
 
 .productCard {
+    max-width: 315px;
+    width: 21.8%;
     position: relative;
 }
 
+.productCard>img {
+    width: 100%;
+}
+
 .price {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 16px;
     left: 16px;
@@ -297,6 +317,7 @@ li>a:hover {
     background-color: white;
     border-radius: 20px;
 }
+
 
 .frame {
     max-width: 44px;
@@ -309,11 +330,24 @@ li>a:hover {
     transform: scale(1.3);
 }
 
+#viewMore {
+    max-width: 144px;
+    max-height: 48px;
+    display: none;
+    padding: 15px 32px;
+    background-color: #B53B1B;
+    border: none;
+    border-radius: 10px;
+}
+
 /* section5 */
 
 .section5 {
     width: 100%;
     background-image: url(../Images/Rectangle\ 98.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 160px 0;
     display: flex;
     justify-content: center;
@@ -328,6 +362,7 @@ li>a:hover {
 }
 
 .newsLetter {
+    text-align: center;
     font-weight: 700;
     font-size: 40px;
     color: #FFFFFF;
@@ -447,9 +482,14 @@ li>a:hover {
 footer {
     background: #402101;
     display: flex;
+    justify-content: center;
+    padding: 32px 0 57px 0;
+}
+
+.footerContent {
+    width: 63%;
+    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 32px 365px 57px 365px;
 }
 
 .firstColumn {
@@ -458,12 +498,12 @@ footer {
     gap: 16px;
 }
 
-.hele {
+.help {
     font-size: 18px;
     font: bold;
 }
 
-footer>div>h4 {
+footer>div>div>h4 {
     font-weight: 300;
     font-size: 16px;
     color: white
@@ -555,7 +595,6 @@ footer>div>h4 {
     align-items: center;
     gap: 72px;
     opacity: 0;
-    transform: translateX(50%) translateY(-50%);
     animation: appear 1s forwards cubic-bezier(.36, .45, .63, .56);
 }
 
@@ -576,8 +615,9 @@ footer>div>h4 {
 }
 
 .firstRow {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     gap: 65px;
 }
 
@@ -614,6 +654,7 @@ footer>div>h4 {
 
 
 .secondDivv>button {
+    width: 37%;
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
@@ -654,21 +695,24 @@ footer>div>h4 {
 
 .artworkCards {
     width: 100%;
-    height: 780px;
     display: flex;
     justify-content: space-between;
-    align-content: space-between;
     flex-wrap: wrap;
+    row-gap: 80px;
+}
+
+.artworkCard {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
 }
 
 .artworkCard>img {
-    display: flex;
-    flex-direction: column;
     transition: all 0.2s linear;
     cursor: pointer;
 }
 
-.artworkCard:hover>img {
+.artworkCard>img:hover {
     transform: scale(1.2);
     box-shadow: 15px 15px 15px darkgray;
 }
@@ -686,6 +730,11 @@ footer>div>h4 {
 .priceAndLogo {
     display: flex;
     justify-content: space-between;
+}
+
+.priceAndLogo>img {
+    max-width: 24px;
+    max-height: 24px;
 }
 
 .thePrice {
@@ -734,6 +783,9 @@ footer>div>h4 {
 .contactSect1 {
     width: 100%;
     background-image: url(../Images/Rectangle\ 108.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 208px 0 112px 240px;
 }
 

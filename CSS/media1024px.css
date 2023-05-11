@@ -1,0 +1,63 @@
+@media (max-width: 1024px) {
+    header {
+        padding: 26px 50px;
+    }
+
+    nav>ul {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+
+    .section2Content {
+        width: 60%;
+    }
+
+    .section4Content {
+        width: 93%;
+    }
+
+    .frame {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .price {
+        width: 10%;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .footerContent {
+        gap: 100px;
+        justify-content: center;
+    }
+
+    /* second page */
+
+    .thePrice {
+        font-size: 20px;
+    }
+
+    /* third page */
+
+    .contactSect1 {
+        display: flex;
+        justify-content: center;
+        padding: 100px 0 100px 0;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    .contactSect2Content {
+        width: 80%;
+    }
+
+    .contactInfoAndMap {
+        gap: 100px;
+    }
+
+}
