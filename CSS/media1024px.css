@@ -8,15 +8,27 @@
     }
 
     .fa-bars {
-        display: block;
+        display: flex;
+    }
+
+    .section2 {
+        padding: 100px 0;
+    }
+
+    .section2Content {
+        width: 80%;
+    }
+
+    .section3 {
+        padding: 50px 0;
     }
 
     .section1Content {
         width: 60%;
     }
 
-    .section2Content {
-        width: 80%;
+    .section4 {
+        padding: 100px 0;
     }
 
     .section4Content {
@@ -34,6 +46,19 @@
         font-size: 10px;
     }
 
+    .section5 {
+        padding: 100px 0;
+    }
+
+
+    .section6 {
+        padding: 70px 0;
+    }
+
+    .question {
+        margin-top: 50px;
+    }
+
     .footerContent {
         gap: 100px;
         justify-content: center;
@@ -41,12 +66,44 @@
 
     /* second page */
 
+    .sect1 {
+        padding: 100px 0;
+    }
+
     .sect1Content {
         width: 50%;
     }
 
+    .sect2 {
+        padding: 80px 0;
+    }
+
+    .artworkCards {
+        row-gap: 50px;
+    }
+
+    .artworkCard {
+        width: 40%;
+    }
+
+    .productName {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
     .thePrice {
         font-size: 20px;
+    }
+
+    .pagination {
+        margin-top: 70px;
+    }
+    
+    .arrow,
+    .number,
+    .ellipsis {
+        width: 40px;
+        height: 40px;
     }
 
     /* third page */

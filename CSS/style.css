@@ -25,8 +25,6 @@ header {
     cursor: pointer;
 }
 
-
-
 nav>ul {
     display: flex;
     gap: 60px;
@@ -737,13 +735,13 @@ footer>div>div>h4 {
 }
 
 .productName {
-    margin-top: 24px;
-    margin-bottom: 28px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 0.96rem;
     color: #B53B1B;
+    margin-top: 24px;
+    margin-bottom: 28px;
 }
 
 .priceAndLogo {
