@@ -22,7 +22,10 @@ header {
 .fa-bars {
     color: white;
     display: none;
+    cursor: pointer;
 }
+
+
 
 nav>ul {
     display: flex;
@@ -31,7 +34,7 @@ nav>ul {
 
 nav>ul>li>a {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.08rem;
     color: white;
     display: block;
     transition-property: all;
@@ -49,7 +52,7 @@ li>a:hover {
 
 .earthlyArtisry {
     font-family: Arial, sans-serif;
-    font-size: 36px;
+    font-size: 2.16rem;
     font-weight: bold;
     transition: all 0.5s linear;
 }
@@ -71,19 +74,19 @@ li>a:hover {
     display: flex;
     align-items: center;
     gap: 16px;
-    color: white;
 }
 
 .signIn {
+    color: white;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0.96rem;
     cursor: pointer;
     transition: all 0.1s linear;
 }
 
 .signIn:hover {
     text-decoration: underline;
-    font-size: 18px;
+    font-size: 1.08rem;
 }
 
 .fa-cart-shopping {
@@ -139,14 +142,14 @@ li>a:hover {
 
 .section1Title {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.4rem;
     color: white;
     text-align: center;
 }
 
 .section1Text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0.96rem;
     color: white;
     text-align: center;
     margin-top: 16px;
@@ -157,6 +160,7 @@ li>a:hover {
 
 .shopNow {
     width: 42%;
+    font-size: 0.96rem;
     color: white;
     background-color: transparent;
     padding: 19px 0;
@@ -201,7 +205,7 @@ li>a:hover {
 .sect2Text {
     text-align: center;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.08rem;
     color: #B53B1B;
 }
 
@@ -222,37 +226,48 @@ li>a:hover {
 
 .ourGallery {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.4rem;
     color: #FFFFFF;
 }
 
 .grid {
-    width: 61%;
-    display: grid;
+    width: 62%;
+
+    /* display: grid;
     gap: 60px;
     grid-template-columns: 1fr 1fr 1.5fr;
     grid-template-rows: 322px 260px;
     grid-template-areas: "rect85 rect85 rect93"
-        "rect91 rect92 rect90";
+        "rect91 rect92 rect90"; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
 }
 
 .rect85 {
+    width: 57%;
     grid-area: rect85;
 }
 
 .rect90 {
+    width: 36%;
     grid-area: rect90;
 }
 
 .rect91 {
+    width: 26%;
     grid-area: rect91;
 }
 
 .rect92 {
+    width: 26%;
     grid-area: rect92;
 }
 
 .rect93 {
+    width: 36%;
     grid-area: rect93;
 }
 
@@ -312,7 +327,7 @@ li>a:hover {
     bottom: 16px;
     left: 16px;
     padding: 17px;
-    font-size: 16px;
+    font-size: 0.96rem;
     color: #B53B1B;
     background-color: white;
     border-radius: 20px;
@@ -364,7 +379,7 @@ li>a:hover {
 .newsLetter {
     text-align: center;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.4rem;
     color: #FFFFFF;
 }
 
@@ -377,7 +392,7 @@ li>a:hover {
 
 #email {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0.96rem;
     color: white;
     padding: 17px 110px 17px 17px;
     background-color: transparent;
@@ -390,7 +405,7 @@ li>a:hover {
 
 #subscribe {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.08rem;
     color: #402101;
     background-color: white;
     border-radius: 0px 10px 10px 0px;
@@ -434,27 +449,27 @@ li>a:hover {
 
 .section6Title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2.16rem;
 }
 
 
 .groupTitle {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.44rem;
     line-height: 29px;
     color: #B53B1B;
 }
 
 .groupText {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0.96rem;
     line-height: 19px;
     color: #402101;
 }
 
 .question {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.44rem;
     color: #402101;
     margin-top: 112px;
     margin-bottom: 20px;
@@ -462,7 +477,7 @@ li>a:hover {
 
 .helpCenter {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.44rem;
     padding: 14px 52px;
     color: white;
     background-color: #B53B1B;
@@ -499,13 +514,13 @@ footer {
 }
 
 .help {
-    font-size: 18px;
+    font-size: 1.08rem;
     font: bold;
 }
 
 footer>div>div>h4 {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 0.96rem;
     color: white
 }
 
@@ -542,13 +557,17 @@ footer>div>div>h4 {
     gap: 16px;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 0.96rem;
     line-height: 19px;
     color: #FFFFFF;
 }
 
 .secondColumn>div>p>a:hover {
     color: #D5906E;
+}
+
+#earthlyArtisry {
+    max-height: 44px;
 }
 
 .fa-phone,
@@ -629,7 +648,7 @@ footer>div>div>h4 {
 
 .shopByCategory {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.08rem;
     color: #402101;
 }
 
@@ -642,7 +661,7 @@ footer>div>div>h4 {
 
 .secondDivv>input {
     font-weight: 400;
-    font-size: 25px;
+    font-size: 1.5rem;
     padding: 19px 271px 18px 16px;
     background-color: transparent;
     border: none;
@@ -656,7 +675,7 @@ footer>div>div>h4 {
 .secondDivv>button {
     width: 37%;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.08rem;
     color: #FFFFFF;
     background-color: #402101;
     border-radius: 0px 10px 10px 0px;
@@ -684,13 +703,13 @@ footer>div>div>h4 {
 
 .allCategories {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2.4rem;
     color: #402101;
 }
 
 .sortButton {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.44rem;
 }
 
 .artworkCards {
@@ -723,7 +742,7 @@ footer>div>div>h4 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0.96rem;
     color: #B53B1B;
 }
 
@@ -741,13 +760,13 @@ footer>div>div>h4 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.44rem;
     color: #402101;
 }
 
 .pagination {
-    margin-top: 120px;
     display: flex;
+    margin-top: 120px;
 }
 
 .arrow,
@@ -762,7 +781,7 @@ footer>div>div>h4 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.08rem;
     color: #402101;
     transition: all 0.2s linear;
 }
@@ -789,7 +808,7 @@ footer>div>div>h4 {
     padding: 208px 0 112px 240px;
 }
 
-form {
+.contactSect1>form {
     width: 30%;
     padding: 24px 30px;
     display: flex;
@@ -819,7 +838,7 @@ form {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.84rem;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     background-color: transparent;
@@ -834,7 +853,7 @@ form {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2.4rem;
     color: #FFFFFF;
 }
 
@@ -843,7 +862,7 @@ form {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.84rem;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     background-color: transparent;
@@ -865,7 +884,7 @@ form {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0.96rem;
     color: #FFFFFF;
     border: none;
     transition: all 0.1s linear;
@@ -899,7 +918,7 @@ h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.4rem;
     color: #402101;
 }
 
@@ -922,7 +941,7 @@ h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 0.96rem;
     color: #623932;
 }
 
@@ -930,12 +949,12 @@ h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.08rem;
     line-height: 22px;
     color: #B53B1B;
 }
 
 iframe {
-    width: 815px;
+    width: 69%;
     height: 320px;
 }

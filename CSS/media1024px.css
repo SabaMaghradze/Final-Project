@@ -6,12 +6,17 @@
     nav>ul {
         display: none;
     }
+
     .fa-bars {
         display: block;
     }
 
-    .section2Content {
+    .section1Content {
         width: 60%;
+    }
+
+    .section2Content {
+        width: 80%;
     }
 
     .section4Content {
@@ -36,6 +41,10 @@
 
     /* second page */
 
+    .sect1Content {
+        width: 50%;
+    }
+
     .thePrice {
         font-size: 20px;
     }
@@ -48,7 +57,7 @@
         padding: 100px 0 100px 0;
     }
 
-    form {
+    .contactSect1>form {
         width: 50%;
     }
 
