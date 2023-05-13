@@ -8,7 +8,7 @@
     }
 
     .fa-bars {
-        display: flex;
+        display: block;
     }
 
     .section2 {
@@ -67,11 +67,12 @@
     /* second page */
 
     .sect1 {
-        padding: 100px 0;
+        padding: 150px 0 50px 0;
     }
 
     .sect1Content {
         width: 50%;
+        gap: 50px;
     }
 
     .sect2 {
@@ -111,7 +112,7 @@
     .contactSect1 {
         display: flex;
         justify-content: center;
-        padding: 100px 0 100px 0;
+        padding: 150px 0 50px 0;
     }
 
     .contactSect1>form {
